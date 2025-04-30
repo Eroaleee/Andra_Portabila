@@ -259,7 +259,7 @@ class GuiManager:
         )
         self.listen_btn.pack(side=tk.LEFT, padx=10)
         
-        # Create return button with styling
+        # Create return button
         return_btn = tk.Button(
             btn_frame, 
             text="Înapoi", 
@@ -570,12 +570,12 @@ class GuiManager:
         copyright_label.pack(fill=tk.X, pady=5)
     #GUI
     def return_to_main_window(self):
-        if self.is_listening:
-            self.is_listening = False
+        if self.app.live_audio.is_listening():
+            self.app.live_audio.stop_listening()
             self.listen_btn.config(text="Start")
             self.result_label.config(text="Andra asteaptă.")
         try:  
-            self.mini_log.delete()          
+            self.mini_log.delete("1.0", "end")
         except Exception as e:
             print(f"Failed to delete mini log: {e}")
     
