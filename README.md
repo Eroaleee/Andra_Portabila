@@ -1,5 +1,5 @@
 # Andra_Portabila
-Andra_Portabila is a Python-based application designed to identify musical notes and chords from both live audio and audio files. The app is named in honor of my friend Andra, who has perfect pitch. It can detect individual notes and chords, providing real-time analysis, and allows users to save the results in log files for further review. Whether you’re analyzing live audio or pre-recorded tracks, this tool can accurately identify and document musical elements for later analysis.
+Andra_Portabila is a Python-based application designed to identify musical notes and chords from both live audio and audio files. The app is named in honor of my friend Andra, who has perfect pitch. It can detect individual notes and chords, providing real-time analysis, and allows users to save the results in log files for further review. Whether you’re analyzing live audio or pre-recorded tracks, this tool tries to accurately identify and document musical elements for later analysis.
 
 Key Features:
 
